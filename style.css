@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(./assets/img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+.main .box {
+  position: absolute;
+  top: 0;
+  height: 80vh;
+  width: 100%;
+  opacity: 0.74;
+  background-color: black;
+}
+
+.main .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50vw;
+  margin: auto;
+  height: 100px;
+}
+
+.main .nav img {
+  position: relative;
+  z-index: 10;
+}
+
+.main .nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.main .text {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px;
+  padding: 30px;
+}
+
+.main .text > :first-child {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.main .text > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.main .text > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.seperate {
+  height: 7px;
+  background-color: rgb(78, 78, 78);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  background-color: rgba(248, 243, 243, 0.021);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-red {
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.main .text input {
+  color: white;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 2px solid white;
+}
+
+.main .text input::placeholder {
+  font-size: 13px;
+}
+
+.first > .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.first > .text :nth-child(1) {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.first > .text :nth-child(2) {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+.first .img {
+  position: relative;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 70vw;
+  color: white;
+  padding: 35px 0px;
+}
+
+.first .img img {
+  width: 540px;
+  position: relative;
+  z-index: 10;
+}
+
+.first .img video {
+  position: absolute;
+  top: 65px;
+  right: 72px;
+  width: 450px;
+}
+
+.faq {
+  padding: 40px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+}
+
+.faq .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  padding: 40px 10px;
+}
+
+.faq .box div:hover {
+  background-color: #414141;
+}
+
+.faq .box div {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #2d2d2d;
+  color: white;
+  width: 60vw;
+  margin: auto;
+  cursor: pointer;
+}
+
+footer {
+  width: 60vw;
+  margin: auto;
+  color: white;
+  padding: 70px 0px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: centre;
+  gap: 25px;
+}
+
+.footer .fitems {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.footer .fitems a {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1250px) {
+  .first {
+    flex-wrap: wrap;
+  }
+  .first .img img {
+    width: 380px;
+  }
+  .first .img video {
+    top: 50px;
+    right: 50px;
+    width: 310px;
+  }
+  .main .text > :nth-child(1) {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .main .text > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .main .text > :nth-child(3) {
+    font-size: 18px;
+  }
+  .main .text .ext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .main .nav {
+    max-width: 90vw;
+  }
+  
+}
+@media screen and (max-width: 1250px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .faq h2{
+    font-size: 36px;
+  }
+}
